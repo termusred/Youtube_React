@@ -1,0 +1,16 @@
+.CardImg {
+    max-width: 18rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 850px;
+    width: 20rem;
+}
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
