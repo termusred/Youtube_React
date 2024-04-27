@@ -1,8 +1,8 @@
-import Card from "./components/Card";
+import Section from "./components/Section";
 function App() {
   return (
     <div className="App">
-      <Card/>
+      <Section/>
     </div>
   );
 }

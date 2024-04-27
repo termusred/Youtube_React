@@ -1,16 +1,9 @@
-import { useState } from "react"
 import "../styles/card.css"
-import axios from 'axios';
 
-const Card = () => {
-    const [product , setProduct] = useState([])
-    function Click() {
-        axios.get("https://fakestoreapi.com/products")
-            .then((data) => setProduct(data.data))
-    }
+const Card = ({data}) => {
     return (
         <div className="Container">
-            {product.map((el , ind) => {
+            {data.map((el , ind) => {
                 return(
                 <div className="card" key={ind}>
                     <img src={el.image} alt="" className="CardImg"/>
@@ -19,7 +12,6 @@ const Card = () => {
                 </div>
                 )
             })}
-            <button onClick={Click}>Add</button>
         </div>
     )
 }

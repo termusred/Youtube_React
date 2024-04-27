@@ -4,12 +4,14 @@
 .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 850px;
+    max-height: 26rem !important;
     width: 20rem;
 }
 .Container {
     display: flex;
+    margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2rem;
